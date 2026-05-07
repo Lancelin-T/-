@@ -79,6 +79,9 @@
   - 左上角浮层显示工艺参数摘要（槽龄、槽温、分子比、铝水平等）
 - **交互方式**: 支持缩放、悬停查看数值、自由拖拽浏览。
 
+  <img width="1860" height="895" alt="image" src="https://github.com/user-attachments/assets/1dc9970a-a6ba-4909-95f6-a50d511010f9" />
+
+
 ### 页面2：工艺曲线 V1（`pot_process`）
 
 - **路径**: `pot_process/index.py`
@@ -98,6 +101,9 @@
   12. Si含量
 - **输出**: 图片自动保存至 `./fig/铝一1分厂/工艺曲线/默认图片.png`
 
+  <img width="1860" height="895" alt="image" src="https://github.com/user-attachments/assets/4a48dc3e-540f-4fed-9ff4-db9bda3efd92" />
+
+
 ### 页面3：工艺曲线 V2（`pot_process_plotly`）
 
 - **路径**: `pot_process_plotly/index.py`
@@ -107,6 +113,9 @@
   - 每个子图右上角显示该指标时段内的**均值**
   - 左上角显示图例色块
   - 更好的响应式体验
+
+<img width="1860" height="895" alt="image" src="https://github.com/user-attachments/assets/162aad89-6302-4c29-91e0-85302405fbe5" />
+
 
 ### 页面4：标签工具（`mark_tool`）
 
@@ -134,6 +143,11 @@
 3. **文件格式要求**：前三列必须严格按照 `k_device`（槽号）、`k_ts`（时间，如 `2026-01-15 08:30:00`）、`k_model`（类型/模型标识）顺序排列。后续列可包含任意额外字段。
 4. 上传成功后，数据表格自动渲染显示，每页 10 条记录。
 
+   <img width="1860" height="895" alt="image" src="https://github.com/user-attachments/assets/5879c7ef-87b9-4f9d-9a0d-d8dd911cd5e0" />
+   <img width="1860" height="895" alt="image" src="https://github.com/user-attachments/assets/d9e9b354-bdf7-4998-8295-4faa1bb231fc" />
+
+
+
 #### 第二步：查看曲线图
 
 1. 在表格中找到需要分析的数据行。
@@ -145,6 +159,9 @@
 4. 图表生成的 HTML 文件会缓存至 `标签工具/html_charts/` 目录，重复查看同一记录时直接读取缓存，提升加载速度。
 5. 点击"关闭图表"退出弹窗。
 
+   <img width="1860" height="895" alt="image" src="https://github.com/user-attachments/assets/48f199cf-b0b7-478e-842f-f21400cd1c9e" />
+
+
 #### 第三步：标记与反馈
 
 1. **标记下拉框**: 每行记录提供预定义分类选项：
@@ -155,6 +172,9 @@
    - `已处理` — 该问题已处理完毕
 2. **反馈文本框**: 输入自由格式的文字反馈意见。
 3. 修改标记或反馈后，点击该行的 **"提交"按钮** 保存（提交按钮仅作确认提示，数据实时保存在 session 中）。
+
+   <img width="1860" height="895" alt="image" src="https://github.com/user-attachments/assets/95a8fc00-0e69-4929-ab6b-49621c94ebcb" />
+
 
 #### 第四步：导出结果
 
